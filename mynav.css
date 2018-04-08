@@ -1,0 +1,32 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.highlight:hover
+{
+	  border-top: 0px;
+	  border-bottom: 2px;
+	  border-left: 0px;
+	  border-right: 0px;
+	  border-style: solid;
+	  border-color: red;
+}
+
+.navi
+{
+	  font-weight: 550 !important;
+	  font-family: "Work sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	  font-size: 18px !important;
+	  text-transform: uppercase;
+}
+
+#brands
+{
+	  padding-left: 350px !important;
+	  padding-right: 350px !important;
+}

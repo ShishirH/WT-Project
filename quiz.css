@@ -1,0 +1,56 @@
+*
+{
+    box-sizing: border-box;
+}
+
+.firstback
+{
+    background-image: url(pencils.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.secondback
+{
+    margin-top: 40px;
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mycontainer .row .col
+{
+    padding: 50px;
+    background-color : rgba(180, 170, 160, 0.7);
+}
+
+.mycontainer .row
+{
+    margin-bottom: 40px !important;
+}
+
+.mycontainer .row a
+{
+    background-color: rgba(70,100,170, 0.4);
+    padding: 40px;
+    border-radius: 50px;
+    color: rgba(255,255,255,0.7);
+
+}
+
+.mycontainer .row a:hover
+{
+    color: #EE6672;
+    text-decoration: none;
+    padding: 45px;
+}
+
+.mycontainer
+{
+    background-color: rgba(160,82,45, 0.8);
+
+}

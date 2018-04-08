@@ -1,53 +1,89 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Quizzes</title>
-	<script src="jquery-3.3.1.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="HomeCss.css">
-	<script type="text/javascript" src="HomeJS.js"></script>
-	<script type="text/javascript" src="bootstrap.min.js"></script>
-</head>
-<body class="bg-info">
-	<nav class="navbar navbar-expand-lg navbar-light sticky-top bg-warning">
-	  <a class="navbar-brand" href="Homepage.html">Resource Stop</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
+    <head>
+	      <title>Quizzes</title>
+	      <script src="jquery-3.3.1.min.js"></script>
+	      <link rel="stylesheet" type="text/css" href="bootstrap.css">
+	      <link rel="stylesheet" type="text/css" href="quiz.css">
+	      <link rel="stylesheet" type="text/css" href="mynav.css">
+	      <script type="text/javascript" src="HomeJS.js"></script>
+	      <script type="text/javascript" src="bootstrap.min.js"></script>
+    </head>
+    <body >
+        <div class ="firstback" >
+		        <nav class="navbar navbar-light navbar-expand-xl justify-content-between sticky-top py-5">
+		            <a href="Homepage.html" class="navbar-brand mx-5 px-5  text-danger navi" id = "brands">Resource Center</a>
+		            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+		                <span class="navbar-toggler-icon"></span>
+		            </button>
+		            <div class="navbar-collapse collapse justify-content-between" id="collapsingNavbar2">
+		                <div><!--placeholder to evenly space flexbox items and center links--></div>
+		                <ul class="navbar-nav">
+		                    <li class="nav-item active">
+		                        <a class="nav-link text-danger navi highlight" href="Homepage.html">Home <span class="sr-only">HOME</span></a>
+		                    </li>
+		                    <li class="nav-item">
+		                        <a class="nav-link text-danger navi highlight" href="Homepage.html">Branch</a>
+		                    </li>
+                        <li class ="nav-item">
+                            <a class ="nav-link text-danger navi highlight" href="login.html">Login</a>
+                        </li>
 
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mr-auto">
-	      <li class="nav-item active">
-	        <a class="nav-link highlight" href="Homepage.html">Home <span class="sr-only">(Home)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link highlight" href="#">Link</a>
-	      </li>
-	      <li class="nav-item dropdown">
-	        <a class="nav-link dropdown-toggle highlight" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          Navigation
-	        </a>
-	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          <a class="dropdown-item highlight" href="quiz.html">Quizzes</a>
-	          <a class="dropdown-item highlight" href="assignments.html">Assignments</a>
-	          <div class="dropdown-divider"></div>
-	          <a class="dropdown-item highlight" href="notes.html">Notes</a>
-	        </div>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link disabled" href="#">Disabled</a>
-	      </li>
-	    </ul>
-	    <form class="form-inline my-2 my-lg-0">
-	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-	    </form>
-	  </div>
-	</nav>
+		                    <li class="nav-item dropdown">
+			                      <a class="nav-link dropdown-toggle highlight text-danger navi" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			                          NAVIGATION
+			                      </a>
+			                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			                          <a class="dropdown-item highlight" href="quiz.html">QUIZZES</a>
+			                          <a class="dropdown-item highlight" href="assignments.html">ASSIGNMENTS</a>
+			                          <div class="dropdown-divider"></div>
+			                          <a class="dropdown-item highlight" href="#" onclick="note()">NOTES</a>
+			                      </div>
+			                  </li>
+		                </ul>
+		                <ul class="nav navbar-nav flex-row">
+		                    <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-facebook"></i></a></li>
+		                    <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-twitter"></i></a></li>
+		                </ul>
+		            </div>
+		        </nav>
 
-	<div class = "container fixheight" >
-		<img src="quiz.jpg" class="img-fluid quiz">
-	</div>
-
-</body>
+        <div class ="secondback" >
+            <div class ="mycontainer" >
+                <div class ="row" id="IT" >
+                    <div class="col lg-6 md-6 sm-12" >
+                        <a href ="IT.html" id ="ITs" > IT </a>
+                    </div>
+                    <div class ="col lg-6 md-6 sm-12" >
+                        <a href ="CSE.html" id="CSs">CS </a>
+                    </div>
+                </div>
+                <div class ="row" id="elec">
+                    <div class="col lg-6 md-6 sm-12" >
+                        <a href ="IT.html" id ="ECEs"> ECE </a>
+                    </div>
+                    <div class ="col lg-6 md-6 sm-12" >
+                        <a href ="CSE.html" id ="EEEs">EEE </a>
+                    </div>
+                </div>
+                <div class ="row" id ="mech">
+                    <div class="col lg-6 md-6 sm-12" >
+                        <a href ="IT.html" id="MECHs"> MECH  </a>
+                    </div>
+                    <div class ="col lg-6 md-6 sm-12" >
+                        <a href ="CSE.html" id="CIVILs" >CIVIL </a>
+                    </div>
+                </div>
+                <div class ="row" id ="mca">
+                    <div class="col lg-6 md-6 sm-12" >
+                        <a href ="IT.html" id="MCAs"> MCA </a>
+                   </div>
+                    <div class ="col lg-6 md-6 sm-12" >
+                        <a href ="CSE.html" id="MBAs"> MBA </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
 </html>

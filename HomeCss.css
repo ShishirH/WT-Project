@@ -87,9 +87,10 @@ html,body
 .firstback
 {
 	background-image: url(building.jpeg);
+  background-attachment: fixed;
 	height: 1200px;
 	max-height: 1200px;
-  background-size: 100% 100%;
+  background-size: cover;
 
 }
 
@@ -106,15 +107,23 @@ html,body
 .secondback
 {
   background-image: url(rest.jpeg);
+  background-attachment: fixed;
   height: 1100px;
   max-height: 1100px;
-  background-size: 100% 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end !important;
+  align-items: center;
 }
 
+.secondback .card
+{
+}
 .thirdback
 {
   background-image: url(thirdback.jpeg);
+  background-attachment: fixed;
   height: 1200px;
   max-height: 1200px;
-  background-size: 100% 100%;
+  background-size: cover;
 }

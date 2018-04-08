@@ -1,0 +1,87 @@
+body
+{
+}
+
+.trans
+{
+    background: rgba(40,150,70,0.4);
+    border: 0px;
+    font-size: 2em;
+    font-family: 'Alegreya Sans', sans-serif !important;
+}
+
+.goto
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+
+}
+
+.firstback
+{
+    background-image: url(house.jpg);
+    background-size: contain;
+
+}
+
+.myform
+{
+    background-image: url(roses.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.myform form
+{
+    width:50% !important;
+    background: rgba(150, 70, 40, 0.4);
+    text-align: center;
+}
+
+.form-group
+{
+    width: 70% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="text"],input[type="email"], input[type="password"], select, textarea {
+
+    background-color : rgba(140,69,110,0.6) !important;
+    color: white;
+
+}
+
+.myform form button, .myform form input[type="submit"]
+{
+    margin-bottom: 30px;
+}
+
+input::-webkit-input-placeholder {
+    color: white !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+    color: white !important;  
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: white !important;  
+}
+
+input:-ms-input-placeholder {  
+    color: white !important;  
+}
+
+input:focus
+{
+    color:white !important;
+}
