@@ -22,14 +22,14 @@ body
 
 .firstback
 {
-    background-image: url(house.jpg);
+    background-image: url(/images/house.jpg);
     background-size: contain;
 
 }
 
 .myform
 {
-    background-image: url(roses.jpg);
+    background-image: url(/images/roses.jpg);
     background-size: cover;
     width: 100%;
     height: 100%;

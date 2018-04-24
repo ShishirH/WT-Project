@@ -86,7 +86,7 @@ html,body
 
 .firstback
 {
-	background-image: url(building.jpeg);
+	background-image: url('../images/building.jpeg');
   background-attachment: fixed;
 	height: 1200px;
 	max-height: 1200px;
@@ -106,7 +106,7 @@ html,body
 
 .secondback
 {
-  background-image: url(rest.jpeg);
+  background-image: url('../images/rest.jpeg');
   background-attachment: fixed;
   height: 1100px;
   max-height: 1100px;
@@ -121,7 +121,7 @@ html,body
 }
 .thirdback
 {
-  background-image: url(thirdback.jpeg);
+  background-image: url('../images/thirdback.jpeg');
   background-attachment: fixed;
   height: 1200px;
   max-height: 1200px;

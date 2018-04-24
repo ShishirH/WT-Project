@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title> WT Quiz-3</title>
+        <link rel ="stylesheet" href="/assets/WTQuiz.css" >
+        <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+        <script>
+        </script>
+    </head>
+
+    <body>
+        <div class="mynav" >
+            <ul>
+                <li id="timer" >WT Quiz-3</li>
+                <li><button id="calc" style="outline: 0 !important; border: 0; color: red; margin-left: 20px;"><i class="fa fa-calculator fa-2x" aria-hidden="true"></i></button></li>
+            </ul>
+        </div>
+
+        <div class ="startquiz" >
+            <button id="start" class="btn btn-danger" onclick="launchIntoFullscreen(document.documentElement);" >Start Quiz</button>
+        </div>
+
+        <div class="row" >
+            <div class="col lg-8 md-8 sm-8">
+                <iframe src="/questions"  id="mainframe" height ="100%" width="100%" frameborder="0" scrolling="no" align="left" >
+                </iframe>
+            </div>
+
+            <div class="col lg-4 md-4 sm-4" >
+                <iframe src="/index" height="100%" width="0%" id="calcframe" frameborder="0" scrolling="no" align="right" ></iframe>
+            </div>
+        </div>
+        <script src="/scripts/fullscreen.js" ></script>
+        <script src="/scripts/WTQuiz.js" ></script>
+    </body>
+</html>
